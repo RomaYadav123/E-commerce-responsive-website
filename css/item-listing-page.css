@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+.main-container {
+  margin: auto;
+  font-family: "Roboto", "Noto", sans-serif;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+header {
+  padding: 24px 8px;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  color: #202020;
+  background-color: #ffff;
+}
+
+.shop-logo a {
+  font-size: 16px;
+  letter-spacing: 8px;
+  color: #202020;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.hamburger {
+  cursor: pointer;
+}
+
+.hamburger .line {
+  width: 24px;
+  height: 4px;
+  margin: 2px;
+  background-color: #252525;
+}
+
+.hamburger-nav ul li a {
+  display: flex;
+  flex: 1;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: #757575;
+  padding: 0px 16px;
+}
+
+.hamburger-nav {
+  display: none;
+  position: fixed;
+  font-size: 13px;
+  top: 0;
+  left: 1;
+  width: 100%; /* basically this is to make the hamurger-nav take the full widht of the page so that once the ul li items will be displayed then the background page needs to be transparent in color...*/
+  height: 100vmax;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.6
+  ); /* to give a transparent color we use this rgb format  and modifying the opacity level for the color which we want in our background. */
+  color: #757575;
+}
+
+.hamburger-nav ul {
+  list-style-type: none;
+  padding: 16px 16px 16px 4px;
+  background-color: #fff;
+  width: 60%; /* since the navbar is always in the ratio of 60:40   and here the navbar is covering 60% width of the page while the rest 40% will be covered with the background page which will be the header, section , etc  cutted out. */
+  margin: 0;
+}
+
+.hamburger-nav.active {
+  display: grid;
+  left: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto auto auto auto auto auto auto;
+  column-gap: 12px;
+  row-gap: 12px;
+}
+
+img {
+  height: 240px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.row-1 {
+  grid-row: 1;
+  grid-column: span 2;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.title {
+  color: #202020;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 0px 34px;
+}
+
+.price {
+  color: #757575;
+  font-size: 13px;
+  padding: 0px 74px;
+}
+
+footer {
+  text-align: center;
+}
+
+.footer-title {
+  color: #757575;
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+.button-4 {
+  font-size: 13px;
+  padding: 6px;
+  text-transform: uppercase;
+  color: #ffff;
+  background-color: #202020;
+  width: 50%;
+}

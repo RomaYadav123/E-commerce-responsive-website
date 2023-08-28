@@ -12,90 +12,102 @@
   </head>
 
   <body>
-    <div id="container">
-      <div class="main-container">
-        <header>
-          <div class="hamburger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-          </div>
+    <div class="main-container">
+      <header>
+        <div class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
 
-          <nav class="hamburger-nav">
-            <ul>
-              <li><a href="#men-outerwear">Men's outerwear</a></li>
-              <li><a href="#ladies-outerwear">Ladies outerwear</a></li>
-              <li><a href="#men-t-shirts">Men's t-shirts</a></li>
-              <li><a href="#ladies-t-shirts">Ladies t-shirts</a></li>
-            </ul>
-          </nav>
+        <nav class="hamburger-nav">
+          <ul>
+            <li><a href="#men-outerwear">Men's outerwear</a></li>
+            <li><a href="#ladies-outerwear">Ladies outerwear</a></li>
+            <li><a href="#men-t-shirts">Men's t-shirts</a></li>
+            <li><a href="#ladies-t-shirts">Ladies t-shirts</a></li>
+          </ul>
+        </nav>
 
-          <div class="shop-logo">
-            <a href="#">Shop</a>
-          </div>
-          <i class="fa-solid fa-cart-shopping"></i>
-        </header>
-        <!-- script for hamburger-header here -->
-        <script>
-          var hamburger = document.querySelector(".hamburger");
-          var hamburgerNav = document.querySelector(".hamburger-nav");
+        <div class="shop-logo">
+          <a href="#">Shop</a>
+        </div>
+        <i class="fa-solid fa-cart-shopping"></i>
+      </header>
+      <!-- script for hamburger-header here -->
+      <script>
+        var hamburger = document.querySelector(".hamburger");
+        var hamburgerNav = document.querySelector(".hamburger-nav");
 
-          hamburger.onclick = function () {
-            hamburgerNav.classList.toggle("active");
-          };
-        </script>
+        hamburger.onclick = function () {
+          hamburgerNav.classList.toggle("active");
+        };
 
-        <div class="section-1">
+        hamburgerNav.onclick = function () {
+          hamburgerNav.classList.toggle("active");
+        };
+      </script>
+
+      <div class="section">
+        <a href="item-listing-page.html">
           <img
             src="./images/mens_outerwear.jpg"
             alt="mens_outerwear_coverpage"
             class="mens_outerwear_coverpage"
           />
-          <h2 class="mens-outerwear-title">Mens outerwear</h2>
+        </a>
+        <h2 class="mens-outerwear-title">Mens outerwear</h2>
+        <a class="button-1" href="item-listing-page.html">
           <button>Shop Now</button>
-        </div>
+        </a>
+      </div>
 
-        <div class="section-2">
+      <div class="section">
+        <a href="item-listing-page.html">
           <img
             src="./images/ladies_outerwear.jpg"
             alt="ladies_outerwear_coverpage"
             class="ladies_outerwear_coverpage"
           />
-          <h2 class="ladies-outerwear-title">Ladies outerwear</h2>
-          <button class="button-1">Shop Now</button>
-        </div>
+        </a>
+        <h2 class="ladies-outerwear-title">Ladies outerwear</h2>
+        <a class="button-1" href="item-listing-page.html">
+          <button>Shop Now</button>
+        </a>
+      </div>
 
-        <div class="section-3">
-          <div class="t-shirts-images">
+      <div class="grid-container">
+        <div class="section">
+          <a href="item-listing-page.html">
             <img
               src="./images/mens_tshirts.jpg"
-              alt="mens_t-shirt-coverpage"
-              class="t-shirt-image-1"
+              alt="ladies_outerwear_coverpage"
+              class="ladies_outerwear_coverpage"
             />
+          </a>
+          <h2 class="ladies-outerwear-title">Men's T-shirts</h2>
+          <a class="button-1" href="item-listing-page.html">
+            <button>Shop Now</button>
+          </a>
+        </div>
+        <div class="section">
+          <a href="item-listing-page.html">
             <img
               src="./images/ladies_tshirts.jpg"
-              alt="ladies-t-shirt_coverpage"
-              class="t-shirt-image-2"
+              alt="ladies_outerwear_coverpage"
+              class="ladies_outerwear_coverpage"
             />
-          </div>
-          <div class="combined-t-shirts">
-            <div class="t-shirts-m">
-              <div class="men-t-shirts-title">Mens t-shirt</div>
-              <button class="button-2">Shop Now</button>
-            </div>
-
-            <div class="t-shirts-l">
-              <div class="ladies-t-shirts-title">ladies t-shirt</div>
-              <button class="button-3">Shop Now</button>
-            </div>
-          </div>
+          </a>
+          <h2 class="ladies-outerwear-title">Ladies T-shirts</h2>
+          <a class="button-1" href="item-listing-page.html">
+            <button>Shop Now</button>
+          </a>
         </div>
-
-        <footer>
-          <div class="footer-title">Made by polymer</div>
-          <button class="button-4">Demo Only</button>
-        </footer>
       </div>
+
+      <footer>
+        <div class="footer-title">Made by:- Roma Yadav</div>
+      </footer>
     </div>
   </body>
 </html>
