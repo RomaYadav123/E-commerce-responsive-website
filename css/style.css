@@ -8,7 +8,6 @@ body,
   font-family: "Roboto", "Noto", sans-serif;
   font-size: 13px;
   line-height: 1.5;
-  border: 5px solid darkorange;
 }
 
 /* 1 */
@@ -118,65 +117,17 @@ button {
 
 .section-3 {
   display: flex;
-  border: 5px solid rgb(60, 255, 0);
 }
 
 .inner-box-1 {
   flex: 1;
-  border: 5px solid purple;
 }
 .inner-box-2 {
   flex: 1;
-  border: 5px solid deeppink;
 }
 .grid-container {
   display: flex;
 }
-
-/* .t-shirts-images {
-  display: flex;
-  border: 5px solid red;
-}
-
-.t-shirt-image-1,
-.t-shirt-image-2 {
-  flex: 1;
-  border: 5px solid darkolivegreen;
-  width: 50%;
-}
-
-.combined-t-shirts {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  padding: 0px 18px;
-  border: 5px solid yellowgreen;
-}
-
-.t-shirts-m {
-  text-align: center;
-}
-
-.t-shirts-l {
-  text-align: center;
-}
-
-.men-t-shirts-title,
-.ladies-t-shirts-title {
-  font-size: 14.3px;
-  color: #202020;
-  margin: 24px 0px;
-}
-
-.button-2,
-.button-3 {
-  padding: 8px 24px;
-  text-transform: uppercase;
-  color: #202020;
-  background-color: #fff;
-  width: 100%;
-  margin-bottom: 28px;
-} */
 
 footer {
   text-align: center;
@@ -195,4 +146,60 @@ footer {
   color: #ffff;
   background-color: #202020;
   width: 50%;
+}
+
+/* For Tablet */
+
+@media only screen and (min-width: 600px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  body,
+  .main-container {
+    margin: auto;
+    font-family: "Roboto", "Noto", sans-serif;
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  /* 1 */
+  header {
+    padding: 24px 8px;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    color: #202020;
+    background-color: #ffff;
+  }
+
+  .shop-logo a {
+    font-size: 16px;
+    letter-spacing: 8px;
+    color: #202020;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .hamburger-nav ul li a {
+    display: flex;
+    flex: 1;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #757575;
+    padding: 0px 16px;
+  }
+
+  .hamburger-nav ul {
+    list-style-type: none;
+    padding: 16px 16px 16px 4px;
+    background-color: #fff;
+    width: 60%; /* since the navbar is always in the ratio of 60:40   and here the navbar is covering 60% width of the page while the rest 40% will be covered with the background page which will be the header, section , etc  cutted out. */
+    margin: 0;
+  }
 }
