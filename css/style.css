@@ -19,6 +19,12 @@ header {
   color: #202020;
   background-color: #ffff;
 }
+.header-for-mobile-only {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+}
 
 .shop-logo a {
   font-size: 16px;
@@ -79,6 +85,31 @@ header {
   left: 0;
 }
 
+.hamburger-nav-tablet {
+  display: none;
+}
+
+.cart-logo {
+  position: relative;
+  margin-right: 16px;
+}
+
+.cart-logo span {
+  position: absolute;
+  /* border: 5px solid greenyellow; */
+  border-radius: 48px;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  background-color: rgba(2, 2, 55, 0.666);
+  color: white;
+  top: -16px;
+  right: -12px;
+}
+
+.fa-cart-shopping {
+  font-size: 24px;
+}
 /* 2 */
 
 .section {
@@ -165,41 +196,45 @@ footer {
 
   /* 1 */
   header {
+    display: flex;
+    flex-direction: column;
     padding: 24px 8px;
     font-size: 16px;
-    display: flex;
-    justify-content: space-between;
     color: #202020;
     background-color: #ffff;
   }
 
-  .shop-logo a {
-    font-size: 16px;
-    letter-spacing: 8px;
-    color: #202020;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
+  .shop-logo {
+    flex: 1;
+    text-align: center;
+    margin-bottom: 24px;
   }
 
   .hamburger {
     display: none;
   }
 
-  .hamburger-nav ul li a {
-    display: flex;
-    flex: 1;
-    margin-bottom: 20px;
-    text-decoration: none;
-    color: #757575;
-    padding: 0px 16px;
+  .hamburger-nav {
+    display: none;
   }
 
-  .hamburger-nav ul {
-    list-style-type: none;
-    padding: 16px 16px 16px 4px;
-    background-color: #fff;
-    width: 60%; /* since the navbar is always in the ratio of 60:40   and here the navbar is covering 60% width of the page while the rest 40% will be covered with the background page which will be the header, section , etc  cutted out. */
-    margin: 0;
+        
+
+  .hamburger-nav-tablet {
+    display: flex;
+  }
+
+  .hamburger-nav-tablet ul {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+  }
+
+  .hamburger-nav-tablet ul li a {
+    text-decoration: none;
+    font-size: 13px;
+    color: #202020;
   }
 }

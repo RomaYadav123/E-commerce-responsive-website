@@ -19,6 +19,13 @@ header {
   background-color: #ffff;
 }
 
+.header-for-mobile-only {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .shop-logo a {
   font-size: 16px;
   letter-spacing: 8px;
@@ -78,6 +85,32 @@ header {
   left: 0;
 }
 
+.hamburger-nav-tablet {
+  display: none;
+}
+
+.cart-logo {
+  position: relative;
+  margin-right: 16px;
+}
+
+.cart-logo span {
+  position: absolute;
+  /* border: 5px solid greenyellow; */
+  border-radius: 48px;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  background-color: rgba(2, 2, 55, 0.666);
+  color: white;
+  top: -16px;
+  right: -12px;
+}
+
+.fa-cart-shopping {
+  font-size: 24px;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: auto auto;
@@ -90,6 +123,10 @@ img {
   height: 140px;
   width: 100%;
   object-fit: cover;
+}
+
+.image-for-tablet {
+  display: none;
 }
 
 .row-1 {
@@ -135,4 +172,80 @@ footer {
   color: #ffff;
   background-color: #202020;
   width: 50%;
+}
+
+/* For Tablet */
+
+@media only screen and (min-width: 600px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  body,
+  .main-container {
+    margin: auto;
+    font-family: "Roboto", "Noto", sans-serif;
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  /* 1 */
+  header {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 8px;
+    font-size: 16px;
+    color: #202020;
+    background-color: #ffff;
+  }
+
+  .shop-logo {
+    flex: 1;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .hamburger-nav {
+    display: none;
+  }
+
+  .header-for-mobile-only {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hamburger-nav-tablet {
+    display: flex;
+  }
+
+  .hamburger-nav-tablet ul {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+  }
+
+  .hamburger-nav-tablet ul li a {
+    text-decoration: none;
+    font-size: 13px;
+    color: #202020;
+  }
+
+  img {
+    height: 240px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .tablet-combo {
+    display: flex;
+    flex-direction: column;
+  }
 }
