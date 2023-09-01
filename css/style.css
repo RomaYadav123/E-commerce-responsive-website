@@ -19,6 +19,7 @@ header {
   color: #202020;
   background-color: #ffff;
 }
+
 .header-for-mobile-only {
   display: flex;
   flex: 1;
@@ -218,7 +219,63 @@ footer {
     display: none;
   }
 
-        
+  .hamburger-nav-tablet {
+    display: flex;
+  }
+
+  .hamburger-nav-tablet ul {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+  }
+
+  .hamburger-nav-tablet ul li a {
+    text-decoration: none;
+    font-size: 13px;
+    color: #202020;
+  }
+}
+
+/* For Website */
+
+@media only screen and (min-width: 798px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  body,
+  .main-container {
+    margin: auto;
+    font-family: "Roboto", "Noto", sans-serif;
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  /* 1 */
+  header {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 8px;
+    font-size: 16px;
+    color: #202020;
+    background-color: #ffff;
+  }
+
+  .shop-logo {
+    flex: 1;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .hamburger-nav {
+    display: none;
+  }
 
   .hamburger-nav-tablet {
     display: flex;

@@ -248,4 +248,117 @@ footer {
     display: flex;
     flex-direction: column;
   }
+
+  .title {
+    color: #202020;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 0px 34px;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+  }
+
+  .price {
+    color: #757575;
+    font-size: 13px;
+    padding: 0px 74px;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+  }
+}
+
+/* For Website */
+
+@media only screen and (min-width: 798px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  body,
+  .main-container {
+    margin: auto;
+    font-family: "Roboto", "Noto", sans-serif;
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  /* 1 */
+  header {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 8px;
+    font-size: 16px;
+    color: #202020;
+    background-color: #ffff;
+  }
+
+  .shop-logo {
+    flex: 1;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .hamburger-nav {
+    display: none;
+  }
+
+  .header-for-mobile-only {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hamburger-nav-tablet {
+    display: flex;
+  }
+
+  .hamburger-nav-tablet ul {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+  }
+
+  .hamburger-nav-tablet ul li a {
+    text-decoration: none;
+    font-size: 13px;
+    color: #202020;
+  }
+
+  img {
+    height: 240px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .tablet-combo {
+    display: flex;
+    flex-direction: column;
+  }
+  .title {
+    color: #202020;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 0px 34px;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+  }
+
+  .price {
+    color: #757575;
+    font-size: 13px;
+    padding: 0px 74px;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+  }
 }

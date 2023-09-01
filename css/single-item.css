@@ -141,6 +141,16 @@ img {
   padding: 0px 34px;
 }
 
+.row-4 {
+  grid-row: 4;
+  grid-column: span 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 34px;
+}
+
 footer {
   display: flex;
   margin-top: 54px;
@@ -183,4 +193,5 @@ footer {
   padding: 0px 34px;
   color: #757575;
   font-size: 13px;
+  margin-bottom: 20px;
 }
